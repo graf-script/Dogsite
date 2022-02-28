@@ -1,0 +1,256 @@
+// GENERAL PROJECT STYLES
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+	width: 96%;
+	margin: 0 auto;
+}
+
+.header{
+	text-align: center;
+}
+
+.nav {
+	padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.nav > ul > li {
+	list-style: none;
+	display: inline-block;
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+a {
+	color: #0e0e0e;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+    position: relative;
+	cursor: pointer;
+}
+
+a:hover {
+    color: #0e0e0e;
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px;
+	background-color: #0f0f0f;
+	content: "";
+	transition: width 0.2s ease-out;
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; 
+}
+
+.header > .welcome > .inner {
+	padding-top: 60px;
+}
+
+.inner > h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+}
+
+.inner > * {
+	margin-top: 5px;
+}
+
+.welcome > .inner > div > img {
+	width: 20% ;
+}
+
+.header > .welcome > * {
+	padding-top: 5px;
+}
+
+.welcome {
+  position: relative;
+	background: url(https://kartinkin.com/uploads/posts/2020-09/1600216328_24-p-fon-selo-39.jpg);
+	  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.welcome:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.65);
+    z-index: 2;
+}
+
+.inner {
+  position: relative;
+  z-index: 3;
+  color: #fafafa;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+/*------------END HEADER------------------*/
+
+.about {
+    margin: 0 auto;
+	min-height: 420px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about > sidebar > *{
+	text-align: center;
+    padding-top: 20px;
+}
+
+sidebar > p {
+	font-size: 15px;
+
+}
+
+.about > sidebar > div > img {
+	width: 15em;
+}
+
+/*-------END SIDEBARS----------*/
+
+.whyUs {
+  position: relative;
+	background: url(https://kartinkin.com/uploads/posts/2020-09/1600216328_24-p-fon-selo-39.jpg);
+	  -webkit-background-size: cover;
+          background-size: cover;
+    
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.inner2 > .text > {
+	margin-top: 10px;
+    width: 50%;
+}
+
+.whyUs:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.65);
+  z-index: 2;
+}
+
+.inner2 {
+  position: relative;
+  z-index: 3;
+  color: #fafafa;
+  padding-top: 40px;
+	padding-bottom: 40px;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*----------END WHY------------*/
+
+footer h1 {
+	text-align: center;
+}
+
+footer {
+	margin-top: 30px;
+	clear: both;
+	padding: 20px;
+}
+
+footer{
+	margin-top: 20px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div ul {
+	margin-top: 30px;
+	list-style: none;
+}
+
+.dog1 {
+	margin-top: 25px;
+}
+
+.images1 {
+    text-align: center;
+}
+
+.images1 img {
+    width: 30em;
+}
+
+footer > p {
+	text-align: center;
+}
+
+ul > li > img {
+    width: 3em;
+}
+
+ul> li{
+    padding-top: 10px;
+}
+
+/*Media*/
+
+@media (max-width: 1300px) {
+    .inner2 {
+      flex-wrap: wrap; 
+    } 
+    
+  }
+
+@media (max-width: 700px) {
+    .about > sidebar{
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: center;
+    }
+    .about > sidebar > * {
+        padding-left: 20px;
+    }
+    .about > sidebar > div > img{
+        width: 10em;
+    }
+    .information {
+        flex-wrap: wrap;
+    }
+}
